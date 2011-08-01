@@ -27,10 +27,10 @@
     return this.each(function(){
       var nodeName = this.nodeName.toLowerCase(),
         $text = $(this),
-        type = $text.attr('type'),
+        type = $text.attr('type');
       
       // check that this is an input element
-      if(nodeName) !== 'input')
+      if(nodeName !== 'input')
         return true;
 
       // only allow text and password types
