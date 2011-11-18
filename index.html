@@ -27,7 +27,28 @@
     pre { background: #000; color: #fff; padding: 15px;}
     hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
     .footer { text-align:center; padding-top:30px; font-style: italic; }
+    input#text {
+      padding: 3px;
+      color: #444;
+      font: 180% Calibri;
+      #font-family: "Warnock Pro", "Goudy Old Style","Palatino","Book Antiqua", Georgia, serif
+      #font-size: 130%;
+      font-style: italic;
+      font-weight: bold;
+      width: 8em;
+      max-width: 20em;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+    }
   </style>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+  <script type="text/javascript" src="https://raw.github.com/fent/jquery.rubber.js/master/jquery.rubber.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#text').rubber();
+    });
+  </script>
 </head>
 
 <body>
@@ -50,31 +71,23 @@
     </div>
 
     
-      <p>This is like the [elastic](http://unwrongest.com/projects/elastic/) plugin but for text fields. Text fields will stretch accordingly to fit their content. It does not stret any longer than their parent's width, preventing breaking the layout.</p>
-    
+      <p>This is like the [elastic](http://unwrongest.com/projects/elastic/) plugin but for text fields. Text fields will stretch accordingly to fit their content. It does not stretch text fields any longer than their parent's width, preventing breaking the layout.</p>
 
-    
+      <h2>Usage</h2>
+      <p><pre>$('input').rubber();</pre></p>
+      <p>You can control the starting width by setting the <code>width</code> CSS field and the max width with the <code>min-width</code> CSS field.</p>
 
+      <h2>Demo</h2>
+      <input type="text" id="text" value="Type Here... " />
     
-      <h2>Install</h2>
-      <p>Download the [minified version](https://raw.github.com/fent/jquery.rubber.js/master/jquery.rubber.min.js). It's only 0.9 kb!
-
-Or clone this repo.</p>
-    
-
     
       <h2>License</h2>
-      <p>MIT</p>
+      <p><a href="https://raw.github.com/fent/jquery.rubber.js/master/LICENSE">MIT</a></p>
     
 
     
       <h2>Authors</h2>
-      <p>fent (fent@gmail.com)<br/>      </p>
-    
-
-    
-      <h2>Contact</h2>
-      <p>fent (fent@gmail.com)<br/>      </p>
+      <p><a href="https://github.com/fent">fent</a><br/>      </p>
     
 
     <h2>Download</h2>
