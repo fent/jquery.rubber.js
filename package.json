@@ -1,0 +1,23 @@
+{
+  "name": "rubber",
+  "version": "0.1.0",
+  "title": "Rubber",
+  "author": {
+    "name": "fent",
+    "email": "fent@gmail.com",
+    "url": "https://github.com/fent"
+  },
+  "licenses": [ {
+    "type": "MIT",
+    "url" : "LICENSE"
+  }],
+  "dependencies": {
+    "jquery": "*"
+  },
+  "description": "It does something useful.",
+  "keywords": [],
+  "homepage": "http://fent.github.com/jquery.rubber.js/",
+  "files": [
+    "jquery.rubber.js"
+  ]
+}
